@@ -1,0 +1,52 @@
+.DS_Store
+Thumbs.db
+
+# Root level package files (use frontend/package.json instead)
+/package.json
+/package-lock.json
+
+__pycache__/
+*.pyc
+*.pyo
+
+venv/
+env/
+.venv/
+
+output.log
+*.log
+server_output.txt
+server_error.txt
+
+backend/instance/
+
+backend/ml_models/**/data/
+backend/ml_models/**/PlantVillage/
+backend/ml_models/**/datasets/
+
+*.pkl
+*.pt
+*.h5
+*.ckpt
+*.joblib
+
+backend/**/*.csv
+
+frontend/node_modules/
+node_modules/
+frontend/build/
+frontend/dist/
+
+# Backend environment files (sensitive)
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.production.local
+
+# Frontend .env files are safe to commit (no secrets, just API URLs)
+# .env.production and .env.development contain only REACT_APP_API_URL
+
+.vscode/
+.idea/
+*.swp
+*.swo
